@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -7,7 +8,7 @@ def index():
 
 @app.route('/home')
 def home():
-  return "<h1><a href='/about'>My home</a></h1>"
+  return render_template('home.html')
 
 @app.route('/about')
 def about():
@@ -15,6 +16,6 @@ def about():
 
 @app.route('/contact')
 def contact():
-  return render_template('contact.html', phone = 24242835)
-  
-app.run(host = '0.0.0.0', port = 8020)
+  return render_template('contact.html', phone = 33333333)
+if __name__ =='__main__':
+  app.run(host = '0.0.0.0', port = 6969, threaded = True, debug = True)
