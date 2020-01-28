@@ -1,1 +1,0 @@
-ŠIS IR TESKSTS
